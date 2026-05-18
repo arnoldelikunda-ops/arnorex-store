@@ -1,0 +1,307 @@
+name: Generate Arnorex Project Structure
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Arnorex eMarket Architecture
+        run: |
+
+          # =========================
+          # CREATE FOLDERS
+          # =========================
+
+          mkdir -p .github/workflows
+
+          mkdir -p css/core
+          mkdir -p css/components
+          mkdir -p css/pages
+          mkdir -p css/themes
+
+          mkdir -p js/core
+          mkdir -p js/components
+
+          mkdir -p js/modules/auth
+          mkdir -p js/modules/products
+          mkdir -p js/modules/cart
+          mkdir -p js/modules/orders
+          mkdir -p js/modules/search
+          mkdir -p js/modules/chat
+          mkdir -p js/modules/user
+          mkdir -p js/modules/analytics
+
+          mkdir -p js/services/firebase
+          mkdir -p js/services/api
+          mkdir -p js/services/local
+
+          mkdir -p js/pages
+          mkdir -p js/utils
+
+          mkdir -p assets/logos
+          mkdir -p assets/icons
+          mkdir -p assets/banners
+          mkdir -p assets/placeholders
+          mkdir -p assets/categories
+          mkdir -p assets/products
+
+          mkdir -p data
+          mkdir -p firebase
+          mkdir -p docs
+
+          # =========================
+          # ROOT FILES
+          # =========================
+
+          touch index.html
+          touch product.html
+          touch cart.html
+          touch checkout.html
+          touch favorites.html
+          touch profile.html
+          touch settings.html
+          touch orders.html
+          touch support.html
+          touch notifications.html
+          touch admin.html
+
+          touch README.md
+          touch package.json
+
+          # =========================
+          # CSS CORE
+          # =========================
+
+          touch css/core/variables.css
+          touch css/core/reset.css
+          touch css/core/typography.css
+          touch css/core/layout.css
+          touch css/core/animations.css
+
+          # =========================
+          # CSS COMPONENTS
+          # =========================
+
+          touch css/components/shared.css
+          touch css/components/navbar.css
+          touch css/components/product-card.css
+          touch css/components/buttons.css
+          touch css/components/modal.css
+          touch css/components/forms.css
+          touch css/components/loaders.css
+          touch css/components/bottom-nav.css
+          touch css/components/sidebar.css
+          touch css/components/chat.css
+
+          # =========================
+          # CSS PAGES
+          # =========================
+
+          touch css/pages/home.css
+          touch css/pages/product.css
+          touch css/pages/cart.css
+          touch css/pages/checkout.css
+          touch css/pages/profile.css
+          touch css/pages/settings.css
+          touch css/pages/orders.css
+          touch css/pages/admin.css
+          touch css/pages/support.css
+
+          # =========================
+          # CSS THEMES
+          # =========================
+
+          touch css/themes/dark.css
+          touch css/themes/gold.css
+          touch css/themes/premium.css
+
+          # =========================
+          # JS CORE
+          # =========================
+
+          echo "// App bootstrap system" > js/core/app.js
+          echo "// Application router" > js/core/router.js
+          echo "// Global state manager" > js/core/state.js
+          echo "// App configuration" > js/core/config.js
+          echo "// Shared constants" > js/core/constants.js
+
+          # =========================
+          # JS COMPONENTS
+          # =========================
+
+          touch js/components/modal.js
+          touch js/components/toast.js
+          touch js/components/dropdown.js
+          touch js/components/carousel.js
+          touch js/components/loader.js
+
+          # =========================
+          # AUTH MODULE
+          # =========================
+
+          touch js/modules/auth/auth.js
+          touch js/modules/auth/auth-ui.js
+
+          # =========================
+          # PRODUCTS MODULE
+          # =========================
+
+          touch js/modules/products/products.js
+          touch js/modules/products/product-card.js
+          touch js/modules/products/recommendations.js
+          touch js/modules/products/recently-viewed.js
+
+          # =========================
+          # CART MODULE
+          # =========================
+
+          touch js/modules/cart/cart.js
+          touch js/modules/cart/cart-ui.js
+          touch js/modules/cart/checkout.js
+
+          # =========================
+          # ORDERS MODULE
+          # =========================
+
+          touch js/modules/orders/orders.js
+          touch js/modules/orders/order-status.js
+          touch js/modules/orders/tracking.js
+
+          # =========================
+          # SEARCH MODULE
+          # =========================
+
+          touch js/modules/search/search.js
+          touch js/modules/search/filters.js
+          touch js/modules/search/suggestions.js
+
+          # =========================
+          # CHAT MODULE
+          # =========================
+
+          touch js/modules/chat/chat.js
+          touch js/modules/chat/messages.js
+          touch js/modules/chat/notifications.js
+
+          # =========================
+          # USER MODULE
+          # =========================
+
+          touch js/modules/user/profile.js
+          touch js/modules/user/favorites.js
+          touch js/modules/user/settings.js
+
+          # =========================
+          # ANALYTICS MODULE
+          # =========================
+
+          touch js/modules/analytics/tracker.js
+          touch js/modules/analytics/trends.js
+          touch js/modules/analytics/engagement.js
+
+          # =========================
+          # FIREBASE SERVICES
+          # =========================
+
+          touch js/services/firebase/firebase-init.js
+          touch js/services/firebase/auth-service.js
+          touch js/services/firebase/firestore-service.js
+          touch js/services/firebase/storage-service.js
+          touch js/services/firebase/analytics-service.js
+
+          # =========================
+          # API SERVICES
+          # =========================
+
+          touch js/services/api/products-api.js
+          touch js/services/api/orders-api.js
+          touch js/services/api/users-api.js
+
+          # =========================
+          # LOCAL SERVICES
+          # =========================
+
+          touch js/services/local/local-cart.js
+          touch js/services/local/local-favorites.js
+          touch js/services/local/cache.js
+
+          # =========================
+          # PAGE CONTROLLERS
+          # =========================
+
+          touch js/pages/home-page.js
+          touch js/pages/product-page.js
+          touch js/pages/cart-page.js
+          touch js/pages/checkout-page.js
+          touch js/pages/orders-page.js
+          touch js/pages/profile-page.js
+          touch js/pages/settings-page.js
+          touch js/pages/admin-page.js
+
+          # =========================
+          # UTILITIES
+          # =========================
+
+          touch js/utils/helpers.js
+          touch js/utils/formatter.js
+          touch js/utils/validators.js
+          touch js/utils/animations.js
+          touch js/utils/dom.js
+
+          # =========================
+          # DATA FILES
+          # =========================
+
+          touch data/categories.json
+          touch data/countries.json
+          touch data/demo-products.json
+
+          # =========================
+          # FIREBASE CONFIG
+          # =========================
+
+          touch firebase/firestore.rules
+          touch firebase/storage.rules
+          touch firebase/firestore.indexes.json
+          touch firebase/firebase.json
+
+          # =========================
+          # DOCUMENTATION
+          # =========================
+
+          touch docs/roadmap.md
+          touch docs/architecture.md
+          touch docs/deployment.md
+
+          # =========================
+          # GITKEEP FILES
+          # =========================
+
+          touch assets/logos/.gitkeep
+          touch assets/icons/.gitkeep
+          touch assets/banners/.gitkeep
+          touch assets/placeholders/.gitkeep
+          touch assets/categories/.gitkeep
+          touch assets/products/.gitkeep
+
+          echo "# Arnorex e-Market" > README.md
+
+      - name: Commit and Push Structure
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add .
+
+          git commit -m "Initialize Arnorex e-Market architecture" || echo "No changes to commit"
+
+          git push
