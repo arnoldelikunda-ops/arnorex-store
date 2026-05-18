@@ -1,0 +1,470 @@
+/* =========================================
+   ARNOREX PREMIUM NAVBAR
+   Luxury Marketplace Navigation System
+========================================= */
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: var(--navbar-height);
+
+  z-index: var(--z-fixed);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-inline: var(--space-xl);
+
+  background:
+    rgba(5,5,5,0.72);
+
+  backdrop-filter:
+    blur(20px);
+
+  -webkit-backdrop-filter:
+    blur(20px);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.06);
+
+  transition:
+    background var(--transition-normal),
+    border var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+/* =========================================
+   NAVBAR SCROLLED STATE
+========================================= */
+
+.navbar.scrolled {
+  background:
+    rgba(5,5,5,0.9);
+
+  border-bottom:
+    1px solid rgba(255,184,0,0.08);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+}
+
+/* =========================================
+   NAV CONTAINER
+========================================= */
+
+.navbar-container {
+  width: 100%;
+  max-width: var(--container-xl);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-xl);
+}
+
+/* =========================================
+   LOGO AREA
+========================================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 48px;
+  height: 48px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 0 12px rgba(255,184,0,0.18));
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-brand-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+
+  text-transform: uppercase;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #ffb800 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+.navbar-brand-subtitle {
+  font-size: 0.72rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.18em;
+
+  color: var(--text-muted);
+
+  margin-top: 2px;
+}
+
+/* =========================================
+   NAV CENTER
+========================================= */
+
+.navbar-center {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================
+   SEARCH SYSTEM
+========================================= */
+
+.search-bar {
+  position: relative;
+
+  width: 100%;
+  max-width: 720px;
+}
+
+.search-input {
+  width: 100%;
+  height: 58px;
+
+  padding-inline:
+    58px 160px;
+
+  border-radius:
+    var(--radius-pill);
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color:
+    var(--text-primary);
+
+  font-size: 0.98rem;
+
+  transition:
+    border var(--transition-normal),
+    background var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.search-input:focus {
+  border:
+    1px solid rgba(255,184,0,0.3);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 0 0 4px rgba(255,184,0,0.08);
+}
+
+.search-input::placeholder {
+  color:
+    var(--text-muted);
+}
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.search-icon {
+  position: absolute;
+
+  top: 50%;
+  left: 22px;
+
+  transform:
+    translateY(-50%);
+
+  font-size: 1rem;
+
+  color:
+    var(--text-muted);
+}
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.search-button {
+  position: absolute;
+
+  top: 50%;
+  right: 8px;
+
+  transform:
+    translateY(-50%);
+
+  height: 44px;
+
+  padding-inline:
+    22px;
+
+  border-radius:
+    var(--radius-pill);
+
+  background:
+    var(--gradient-gold);
+
+  color:
+    #000000;
+
+  font-weight: 800;
+
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.search-button:hover {
+  transform:
+    translateY(-50%)
+    scale(1.03);
+
+  box-shadow:
+    var(--shadow-gold);
+}
+
+/* =========================================
+   NAV ACTIONS
+========================================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-sm);
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   NAV ICON BUTTONS
+========================================= */
+
+.nav-icon-btn {
+  position: relative;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius:
+    50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color:
+    var(--text-primary);
+
+  font-size: 1.1rem;
+
+  transition:
+    transform var(--transition-normal),
+    background var(--transition-normal),
+    border var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.nav-icon-btn:hover {
+  transform:
+    translateY(-4px);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,184,0,0.22);
+
+  box-shadow:
+    var(--shadow-gold);
+}
+
+/* =========================================
+   NOTIFICATION BADGE
+========================================= */
+
+.nav-badge {
+  position: absolute;
+
+  top: -2px;
+  right: -2px;
+
+  min-width: 22px;
+  height: 22px;
+
+  padding-inline: 6px;
+
+  border-radius:
+    var(--radius-pill);
+
+  background:
+    var(--gradient-red);
+
+  color:
+    white;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    var(--shadow-red);
+}
+
+/* =========================================
+   USER PROFILE BUTTON
+========================================= */
+
+.user-avatar {
+  width: 52px;
+  height: 52px;
+
+  border-radius:
+    50%;
+
+  object-fit: cover;
+
+  border:
+    2px solid rgba(255,184,0,0.3);
+
+  box-shadow:
+    var(--shadow-gold);
+}
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* =========================================
+   RESPONSIVE SYSTEM
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .search-input {
+    padding-inline:
+      54px 130px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .navbar {
+    padding-inline:
+      var(--space-lg);
+  }
+
+  .navbar-brand-subtitle {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height:
+      78px;
+  }
+
+  .navbar-container {
+    gap:
+      var(--space-md);
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .search-input {
+    height:
+      50px;
+
+    padding-inline:
+      50px 60px;
+  }
+
+  .search-button {
+    display: none;
+  }
+
+  .nav-icon-btn {
+    width: 46px;
+    height: 46px;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .navbar-actions {
+    gap:
+      8px;
+  }
+
+  .nav-icon-btn {
+    width: 42px;
+    height: 42px;
+
+    font-size:
+      1rem;
+  }
+
+  .search-input {
+    font-size:
+      0.92rem;
+  }
+
+                   }
