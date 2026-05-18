@@ -1,0 +1,335 @@
+/* =========================================
+   ARNOREX TYPOGRAPHY SYSTEM
+   Premium Marketplace Typography Engine
+========================================= */
+
+/* =========================================
+   GOOGLE FONT IMPORT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* =========================================
+   BODY TYPOGRAPHY
+========================================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: var(--text-primary);
+
+  letter-spacing: -0.01em;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.04em;
+
+  color: var(--text-primary);
+}
+
+/* =========================================
+   DISPLAY HEADINGS
+========================================= */
+
+.display-xl {
+  font-size: clamp(4rem, 8vw, 7rem);
+
+  font-weight: 900;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.07em;
+}
+
+.display-lg {
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -0.06em;
+}
+
+.display-md {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.05em;
+}
+
+/* =========================================
+   STANDARD HEADINGS
+========================================= */
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+p {
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   SMALL TEXT
+========================================= */
+
+.text-sm {
+  font-size: 0.88rem;
+}
+
+.text-xs {
+  font-size: 0.78rem;
+}
+
+/* =========================================
+   FONT WEIGHTS
+========================================= */
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+/* =========================================
+   PREMIUM GRADIENT TEXT
+========================================= */
+
+.text-gold-gradient {
+  background: var(--gradient-gold);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+.text-red-gradient {
+  background: var(--gradient-red);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+.text-blue-gradient {
+  background: var(--gradient-blue);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+/* =========================================
+   TEXT UTILITIES
+========================================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-gold {
+  color: var(--color-gold-primary);
+}
+
+.text-red {
+  color: var(--color-red-primary);
+}
+
+.text-blue {
+  color: var(--color-blue-primary);
+}
+
+/* =========================================
+   LINE CLAMP
+========================================= */
+
+.line-clamp-1 {
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* =========================================
+   PRICE TYPOGRAPHY
+========================================= */
+
+.price {
+  font-size: 1.3rem;
+
+  font-weight: 800;
+
+  color: var(--color-gold-primary);
+
+  letter-spacing: -0.03em;
+}
+
+.price-old {
+  color: var(--text-muted);
+
+  text-decoration: line-through;
+
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   CATEGORY LABELS
+========================================= */
+
+.category-label {
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.12em;
+
+  color: var(--color-gold-primary);
+}
+
+/* =========================================
+   LOGO TYPOGRAPHY
+========================================= */
+
+.logo-text {
+  font-size: 2rem;
+
+  font-weight: 900;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   RESPONSIVE TYPOGRAPHY
+========================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+}
