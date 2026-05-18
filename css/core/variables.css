@@ -1,0 +1,192 @@
+/* =========================================
+   ARNOREX e-MARKET DESIGN TOKENS
+   Premium Marketplace UI System
+========================================= */
+
+:root {
+
+  /* =========================================
+     BRAND COLORS
+  ========================================= */
+
+  --color-red-primary: #c40000;
+  --color-red-light: #ff2a2a;
+  --color-red-dark: #7a0000;
+
+  --color-blue-primary: #001f7a;
+  --color-blue-light: #2457ff;
+  --color-blue-dark: #000b3d;
+
+  --color-gold-primary: #ffb800;
+  --color-gold-light: #ffd95e;
+  --color-gold-dark: #c58a00;
+
+  --color-silver: #d9d9d9;
+
+  /* =========================================
+     BACKGROUNDS
+  ========================================= */
+
+  --bg-primary: #050505;
+  --bg-secondary: #0b0b0f;
+  --bg-card: #101014;
+  --bg-elevated: #17171d;
+
+  --bg-glass: rgba(255, 255, 255, 0.06);
+  --bg-glass-strong: rgba(255, 255, 255, 0.12);
+
+  /* =========================================
+     TEXT COLORS
+  ========================================= */
+
+  --text-primary: #ffffff;
+  --text-secondary: #b7b7c9;
+  --text-muted: #7f8495;
+
+  --text-gold: var(--color-gold-primary);
+
+  /* =========================================
+     BORDERS
+  ========================================= */
+
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.14);
+
+  --border-gold: rgba(255, 184, 0, 0.4);
+  --border-red: rgba(196, 0, 0, 0.35);
+  --border-blue: rgba(0, 31, 122, 0.35);
+
+  /* =========================================
+     PREMIUM GRADIENTS
+  ========================================= */
+
+  --gradient-gold:
+    linear-gradient(
+      135deg,
+      #ffb800 0%,
+      #ffd95e 50%,
+      #c58a00 100%
+    );
+
+  --gradient-red:
+    linear-gradient(
+      135deg,
+      #ff2a2a 0%,
+      #c40000 50%,
+      #7a0000 100%
+    );
+
+  --gradient-blue:
+    linear-gradient(
+      135deg,
+      #2457ff 0%,
+      #001f7a 50%,
+      #000b3d 100%
+    );
+
+  --gradient-dark:
+    linear-gradient(
+      180deg,
+      #101014 0%,
+      #050505 100%
+    );
+
+  --gradient-premium:
+    linear-gradient(
+      135deg,
+      rgba(196,0,0,0.25) 0%,
+      rgba(0,31,122,0.25) 50%,
+      rgba(255,184,0,0.12) 100%
+    );
+
+  /* =========================================
+     SHADOWS
+  ========================================= */
+
+  --shadow-sm:
+    0 2px 8px rgba(0,0,0,0.25);
+
+  --shadow-md:
+    0 8px 24px rgba(0,0,0,0.35);
+
+  --shadow-lg:
+    0 18px 48px rgba(0,0,0,0.45);
+
+  --shadow-gold:
+    0 0 24px rgba(255,184,0,0.22);
+
+  --shadow-red:
+    0 0 24px rgba(196,0,0,0.22);
+
+  --shadow-blue:
+    0 0 24px rgba(0,31,122,0.22);
+
+  /* =========================================
+     GLASS EFFECTS
+  ========================================= */
+
+  --glass-blur: blur(16px);
+
+  --glass-border:
+    1px solid rgba(255,255,255,0.08);
+
+  /* =========================================
+     BORDER RADIUS
+  ========================================= */
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 38px;
+  --radius-pill: 999px;
+
+  /* =========================================
+     SPACING SYSTEM
+  ========================================= */
+
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 18px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* =========================================
+     TRANSITIONS
+  ========================================= */
+
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* =========================================
+     Z-INDEX SYSTEM
+  ========================================= */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-fixed: 1000;
+  --z-modal: 5000;
+  --z-loader: 9999;
+
+  /* =========================================
+     CONTAINER WIDTHS
+  ========================================= */
+
+  --container-sm: 540px;
+  --container-md: 768px;
+  --container-lg: 1200px;
+  --container-xl: 1440px;
+
+  /* =========================================
+     NAVIGATION HEIGHTS
+  ========================================= */
+
+  --navbar-height: 84px;
+  --bottom-nav-height: 78px;
+
+}
