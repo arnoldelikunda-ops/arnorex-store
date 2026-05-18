@@ -1,0 +1,455 @@
+/* =========================================
+   ARNOREX LAYOUT SYSTEM
+   Premium Marketplace Structure Engine
+========================================= */
+
+/* =========================================
+   APP ROOT
+========================================= */
+
+#app {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+  position: relative;
+
+  width: 100%;
+
+  padding-top: var(--navbar-height);
+  padding-bottom: calc(var(--bottom-nav-height) + 40px);
+}
+
+/* =========================================
+   SECTION SYSTEM
+========================================= */
+
+.section {
+  position: relative;
+
+  padding-block: var(--space-3xl);
+}
+
+.section-sm {
+  padding-block: var(--space-2xl);
+}
+
+.section-lg {
+  padding-block: 100px;
+}
+
+/* =========================================
+   SECTION HEADERS
+========================================= */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-md);
+
+  margin-bottom: var(--space-2xl);
+}
+
+.section-title {
+  position: relative;
+
+  display: inline-block;
+
+  font-size: clamp(1.8rem, 4vw, 3rem);
+
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+.section-title::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -10px;
+
+  width: 60%;
+  height: 4px;
+
+  border-radius: var(--radius-pill);
+
+  background: var(--gradient-gold);
+}
+
+/* =========================================
+   GRID SYSTEM
+========================================= */
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-auto {
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.gap-sm {
+  gap: var(--space-md);
+}
+
+.gap-md {
+  gap: var(--space-lg);
+}
+
+.gap-lg {
+  gap: var(--space-2xl);
+}
+
+/* =========================================
+   FLEX UTILITIES
+========================================= */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 760px;
+}
+
+.hero-subtitle {
+  margin-bottom: var(--space-md);
+}
+
+.hero-title {
+  margin-bottom: var(--space-xl);
+}
+
+.hero-description {
+  max-width: 620px;
+
+  margin-bottom: var(--space-2xl);
+
+  font-size: 1.1rem;
+}
+
+/* =========================================
+   BACKGROUND EFFECTS
+========================================= */
+
+.bg-blur-red {
+  position: absolute;
+
+  top: -200px;
+  left: -120px;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(196, 0, 0, 0.18);
+
+  filter: blur(120px);
+
+  pointer-events: none;
+}
+
+.bg-blur-blue {
+  position: absolute;
+
+  right: -180px;
+  bottom: -180px;
+
+  width: 520px;
+  height: 520px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 31, 122, 0.2);
+
+  filter: blur(140px);
+
+  pointer-events: none;
+}
+
+.bg-blur-gold {
+  position: absolute;
+
+  top: 40%;
+  left: 40%;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 184, 0, 0.12);
+
+  filter: blur(100px);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: var(--space-xl);
+}
+
+/* =========================================
+   CARD STACK
+========================================= */
+
+.card-stack {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-xl);
+}
+
+/* =========================================
+   SIDEBAR LAYOUT
+========================================= */
+
+.sidebar-layout {
+  display: grid;
+
+  grid-template-columns: 280px 1fr;
+
+  gap: var(--space-2xl);
+}
+
+/* =========================================
+   PAGE WRAPPER
+========================================= */
+
+.page-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* =========================================
+   CONTENT WRAPPER
+========================================= */
+
+.content-wrapper {
+  width: 100%;
+
+  max-width: var(--container-xl);
+
+  margin-inline: auto;
+
+  padding-inline: var(--space-xl);
+}
+
+/* =========================================
+   DIVIDERS
+========================================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  background: var(--border-primary);
+}
+
+.divider-gradient {
+  width: 100%;
+  height: 2px;
+
+  background: var(--gradient-premium);
+
+  border-radius: var(--radius-pill);
+}
+
+/* =========================================
+   SPACING UTILITIES
+========================================= */
+
+.mt-sm {
+  margin-top: var(--space-md);
+}
+
+.mt-md {
+  margin-top: var(--space-xl);
+}
+
+.mt-lg {
+  margin-top: var(--space-2xl);
+}
+
+.mb-sm {
+  margin-bottom: var(--space-md);
+}
+
+.mb-md {
+  margin-bottom: var(--space-xl);
+}
+
+.mb-lg {
+  margin-bottom: var(--space-2xl);
+}
+
+/* =========================================
+   POSITION UTILITIES
+========================================= */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* =========================================
+   RESPONSIVE SYSTEM
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .sidebar-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: auto;
+
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+
+  .content-wrapper {
+    padding-inline: var(--space-lg);
+  }
+
+  .section {
+    padding-block: var(--space-2xl);
+  }
+
+  .product-grid {
+    grid-template-columns:
+      repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: var(--space-lg);
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
