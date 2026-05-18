@@ -1,0 +1,304 @@
+/* =========================================
+   ARNOREX RESET SYSTEM
+   Premium Cross-Browser Foundation
+========================================= */
+
+/* =========================================
+   UNIVERSAL RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   ROOT HTML
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  font-size: 16px;
+
+  overflow-x: hidden;
+}
+
+/* =========================================
+   BODY FOUNDATION
+========================================= */
+
+body {
+  min-height: 100vh;
+
+  background: var(--bg-primary);
+
+  color: var(--text-primary);
+
+  overflow-x: hidden;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-synthesis: none;
+}
+
+/* =========================================
+   MEDIA ELEMENTS
+========================================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+
+  max-width: 100%;
+
+  user-select: none;
+}
+
+/* =========================================
+   FORM ELEMENTS
+========================================= */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+
+  border: none;
+  outline: none;
+
+  background: none;
+
+  color: inherit;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    transform var(--transition-fast),
+    opacity var(--transition-fast),
+    background var(--transition-fast);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+
+  transition:
+    opacity var(--transition-fast),
+    color var(--transition-fast);
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* =========================================
+   TABLES
+========================================= */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea {
+  resize: none;
+}
+
+/* =========================================
+   INPUT AUTOFILL FIX
+========================================= */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-primary);
+
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-red-primary),
+      var(--color-blue-primary)
+    );
+
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-red-light),
+      var(--color-blue-light)
+    );
+}
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+  background: var(--color-gold-primary);
+  color: #000000;
+}
+
+/* =========================================
+   FOCUS STATES
+========================================= */
+
+:focus-visible {
+  outline:
+    2px solid var(--color-gold-primary);
+
+  outline-offset: 3px;
+}
+
+/* =========================================
+   DISABLED STATES
+========================================= */
+
+button:disabled,
+input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   HIDE ELEMENTS
+========================================= */
+
+.hidden {
+  display: none !important;
+}
+
+/* =========================================
+   CONTAINER SYSTEM
+========================================= */
+
+.container {
+  width: 100%;
+
+  max-width: var(--container-xl);
+
+  margin-inline: auto;
+
+  padding-inline: var(--space-lg);
+}
+
+/* =========================================
+   GLASS UTILITY
+========================================= */
+
+.glass {
+  background: var(--bg-glass);
+
+  backdrop-filter: var(--glass-blur);
+
+  -webkit-backdrop-filter: var(--glass-blur);
+
+  border: var(--glass-border);
+}
+
+/* =========================================
+   PREMIUM CARD UTILITY
+========================================= */
+
+.premium-card {
+  background: var(--bg-card);
+
+  border: 1px solid var(--border-primary);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+
+  transition:
+    transform var(--transition-normal),
+    border var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--border-gold);
+
+  box-shadow:
+    var(--shadow-lg),
+    var(--shadow-gold);
+}
+
+/* =========================================
+   PAGE TRANSITIONS
+========================================= */
+
+.page-fade {
+  animation: pageFade 0.4s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
