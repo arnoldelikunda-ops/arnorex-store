@@ -3,50 +3,59 @@
 
 <head>
 
-  <!-- =========================================
-       META
-  ========================================== -->
+  <!-- META -->
 
   <meta charset="UTF-8" />
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="
+      width=device-width,
+      initial-scale=1.0
+    "
   />
 
   <meta
     name="theme-color"
-    content="#050505"
+    content="#0a0a0a"
   />
 
-  <meta
-    name="description"
-    content="Arnorex e-Market — Premium Marketplace Ecosystem"
-  />
+  <title>
+    Arnorex eMarket
+  </title>
 
-  <title>Arnorex e-Market</title>
-
-  <!-- =========================================
-       FAVICON
-  ========================================== -->
+  <!-- FONTS -->
 
   <link
-    rel="icon"
-    href="./assets/logos/logo.png"
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
   />
 
-  <!-- =========================================
-       CORE CSS
-  ========================================== -->
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
 
   <link
+    href="
+      https://fonts.googleapis.com/css2?
+      family=Inter:wght@300;400;500;600;700;800&
+      display=swap
+    "
     rel="stylesheet"
-    href="./css/core/variables.css"
   />
+
+  <!-- CORE CSS -->
 
   <link
     rel="stylesheet"
     href="./css/core/reset.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./css/core/variables.css"
   />
 
   <link
@@ -64,9 +73,12 @@
     href="./css/core/animations.css"
   />
 
-  <!-- =========================================
-       COMPONENT CSS
-  ========================================== -->
+  <!-- COMPONENTS -->
+
+  <link
+    rel="stylesheet"
+    href="./css/components/shared.css"
+  />
 
   <link
     rel="stylesheet"
@@ -83,9 +95,7 @@
     href="./css/components/product-card.css"
   />
 
-  <!-- =========================================
-       PAGE CSS
-  ========================================== -->
+  <!-- PAGE CSS -->
 
   <link
     rel="stylesheet"
@@ -96,404 +106,350 @@
 
 <body>
 
-  <!-- =========================================
-       APP
-  ========================================== -->
-
-  <div id="app">
-
-    <!-- =========================================
-         PREMIUM NAVBAR
-    ========================================== -->
-
-    <header class="navbar">
-
-      <div class="navbar-container">
-
-        <!-- LOGO -->
-
-        <a
-          href="index.html"
-          class="navbar-logo"
-        >
-
-          <img
-            src="./assets/logos/logo.png"
-            alt="Arnorex Logo"
-          />
-
-          <div class="navbar-brand">
-
-            <span class="navbar-brand-title">
-              Arnorex
-            </span>
-
-            <span class="navbar-brand-subtitle">
-              Premium Marketplace
-            </span>
-
-          </div>
-
-        </a>
-
-        <!-- SEARCH -->
-
-        <div class="navbar-center">
-
-          <div class="search-bar">
-
-            <span class="search-icon">
-              🔍
-            </span>
-
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search products, brands and categories..."
-            />
-
-            <button class="search-button">
-              Search
-            </button>
-
-          </div>
-
-        </div>
-
-        <!-- ACTIONS -->
-
-        <div class="navbar-actions">
-
-          <button class="nav-icon-btn">
-            ❤
-
-            <span class="nav-badge">
-              2
-            </span>
-
-          </button>
-
-          <button class="nav-icon-btn">
-            🛒
-
-            <span class="nav-badge">
-              3
-            </span>
-
-          </button>
-
-          <button class="nav-icon-btn">
-            🔔
-          </button>
-
-        </div>
-
-      </div>
-
-    </header>
-
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
-
-    <section class="hero-section">
-
-      <!-- BACKGROUND EFFECTS -->
-
-      <div class="bg-blur-red"></div>
-      <div class="bg-blur-blue"></div>
-      <div class="bg-blur-gold"></div>
-
-      <div class="content-wrapper">
-
-        <div class="hero-content animate-fade-up">
-
-          <div class="category-label hero-subtitle">
-            PREMIUM COMMERCE EXPERIENCE
-          </div>
-
-          <h1 class="display-lg hero-title">
-
-            The Future Of
-            <span class="text-gold-gradient">
-              African
-            </span>
-            Digital Commerce
-
-          </h1>
-
-          <p class="hero-description">
-
-            Discover premium products, verified sellers,
-            luxury brands, and next-generation shopping
-            experiences powered by the Arnorex ecosystem.
-
-          </p>
-
-          <div class="flex flex-wrap gap-md">
-
-            <button
-              class="btn btn-primary btn-lg btn-shine"
-            >
-              Explore Marketplace
-            </button>
-
-            <button
-              class="btn btn-glass btn-lg"
-            >
-              Become a Seller
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- =========================================
-         TRENDING PRODUCTS
-    ========================================== -->
-
-    <section class="section">
-
-      <div class="content-wrapper">
-
-        <div class="section-header">
-
-          <h2 class="section-title">
-            Trending Products
-          </h2>
-
-          <button
-            class="btn btn-outline"
-          >
-            View All
-          </button>
-
-        </div>
-
-        <!-- PRODUCT GRID -->
-
-        <div class="product-grid">
-
-          <!-- CARD 1 -->
-
-          <article class="product-card">
-
-            <div class="product-image-wrapper">
-
-              <span class="product-badge">
-                -25%
-              </span>
-
-              <button
-                class="product-favorite-btn"
-              >
-                ❤
-              </button>
-
-              <img
-                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-                alt="Sneakers"
-                class="product-image"
-              />
-
-              <div class="product-actions">
-
-                <button
-                  class="product-action-btn"
-                >
-                  👁
-                </button>
-
-                <button
-                  class="product-action-btn"
-                >
-                  🛒
-                </button>
-
-              </div>
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                Fashion
-              </div>
-
-              <h3 class="product-title">
-                Luxury Premium Sneakers
-              </h3>
-
-              <p class="product-description">
-
-                Modern luxury sneakers designed
-                for premium comfort and style.
-
-              </p>
-
-              <div class="product-price-group">
-
-                <span class="product-price">
-                  $120
-                </span>
-
-                <span class="product-old-price">
-                  $180
-                </span>
-
-              </div>
-
-              <div class="product-rating">
-                ⭐ 4.9 • 1.2k Reviews
-              </div>
-
-              <div class="product-stock in-stock">
-                In Stock
-              </div>
-
-            </div>
-
-          </article>
-
-          <!-- CARD 2 -->
-
-          <article class="product-card">
-
-            <div class="product-image-wrapper">
-
-              <span class="product-badge">
-                NEW
-              </span>
-
-              <button
-                class="product-favorite-btn"
-              >
-                ❤
-              </button>
-
-              <img
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-                alt="Watch"
-                class="product-image"
-              />
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                Accessories
-              </div>
-
-              <h3 class="product-title">
-                Premium Gold Watch
-              </h3>
-
-              <p class="product-description">
-
-                Elegant luxury watch crafted for
-                premium modern lifestyle.
-
-              </p>
-
-              <div class="product-price-group">
-
-                <span class="product-price">
-                  $340
-                </span>
-
-              </div>
-
-              <div class="product-rating">
-                ⭐ 4.8 • 850 Reviews
-              </div>
-
-              <div class="product-stock low-stock">
-                Low Stock
-              </div>
-
-            </div>
-
-          </article>
-
-          <!-- CARD 3 -->
-
-          <article class="product-card">
-
-            <div class="product-image-wrapper">
-
-              <button
-                class="product-favorite-btn"
-              >
-                ❤
-              </button>
-
-              <img
-                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-                alt="Headphones"
-                class="product-image"
-              />
-
-            </div>
-
-            <div class="product-content">
-
-              <div class="product-category">
-                Electronics
-              </div>
-
-              <h3 class="product-title">
-                Wireless Premium Headphones
-              </h3>
-
-              <p class="product-description">
-
-                Deep immersive sound engineered
-                for next-generation listening.
-
-              </p>
-
-              <div class="product-price-group">
-
-                <span class="product-price">
-                  $89
-                </span>
-
-              </div>
-
-              <div class="product-rating">
-                ⭐ 5.0 • 3.4k Reviews
-              </div>
-
-              <div class="product-stock in-stock">
-                In Stock
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
+  <!-- ======================================
+       ANNOUNCEMENT BAR
+  ======================================= -->
+
+  <div class="announcement-bar">
+
+    <div class="announcement-text">
+      🚀 Free Global Shipping Available
+    </div>
 
   </div>
 
-  <!-- =========================================
-       JAVASCRIPT
-  ========================================== -->
+  <!-- ======================================
+       NAVBAR
+  ======================================= -->
+
+  <header class="navbar">
+
+    <div class="container navbar-container">
+
+      <!-- LOGO -->
+
+      <a
+        href="index.html"
+        class="logo-wrapper"
+      >
+
+        <img
+          src="./assets/logos/logo.png"
+          alt="Arnorex Logo"
+          class="logo-image"
+        />
+
+        <span class="logo-text">
+          Arnorex
+        </span>
+
+      </a>
+
+      <!-- SEARCH -->
+
+      <div class="navbar-search">
+
+        <input
+          type="text"
+          id="home-search-input"
+          placeholder="
+            Search products,
+            brands and categories...
+          "
+        />
+
+      </div>
+
+      <!-- NAV ACTIONS -->
+
+      <div class="navbar-actions">
+
+        <a href="favorites.html">
+          ❤
+        </a>
+
+        <a href="cart.html">
+          🛒
+        </a>
+
+        <a href="profile.html">
+          👤
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ======================================
+       HERO SECTION
+  ======================================= -->
+
+  <section class="hero-section">
+
+    <div class="container hero-container">
+
+      <!-- LEFT -->
+
+      <div class="hero-content">
+
+        <span class="hero-badge">
+          PREMIUM MARKETPLACE
+        </span>
+
+        <h1 class="hero-title">
+          Luxury Marketplace Experience
+        </h1>
+
+        <p class="hero-description">
+
+          Discover premium products,
+          elite brands, trending gadgets,
+          fashion, luxury accessories
+          and global deals — all in one
+          futuristic marketplace.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#featured-section"
+            class="
+              premium-btn
+              gold-btn
+            "
+          >
+            Explore Now
+          </a>
+
+          <a
+            href="#flash-sale-section"
+            class="
+              premium-btn
+              dark-btn
+            "
+          >
+            Flash Sales
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="hero-visual">
+
+        <div class="hero-glow"></div>
+
+        <img
+          src="
+            https://images.unsplash.com/
+            photo-1523275335684-37898b6baf30
+          "
+          alt="Premium Product"
+          class="hero-image"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       CATEGORY NAVIGATION
+  ======================================= -->
+
+  <section class="category-section">
+
+    <div class="container">
+
+      <div
+        id="category-navigation"
+        class="category-navigation"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       FEATURED PRODUCTS
+  ======================================= -->
+
+  <section
+    id="featured-section"
+    class="products-section"
+  >
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>
+          Featured Products
+        </h2>
+
+        <p>
+          Premium hand-picked products
+        </p>
+
+      </div>
+
+      <div
+        id="featured-products"
+        class="products-grid"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       FLASH SALES
+  ======================================= -->
+
+  <section
+    id="flash-sale-section"
+    class="
+      products-section
+      dark-section
+    "
+  >
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>
+          Flash Sales
+        </h2>
+
+        <p>
+          Limited time premium deals
+        </p>
+
+      </div>
+
+      <div
+        id="flash-sale-products"
+        class="products-grid"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       TRENDING PRODUCTS
+  ======================================= -->
+
+  <section class="products-section">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>
+          Trending Products
+        </h2>
+
+        <p>
+          Most searched products
+        </p>
+
+      </div>
+
+      <div
+        id="trending-products"
+        class="products-grid"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       BEST SELLERS
+  ======================================= -->
+
+  <section class="products-section">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>
+          Best Sellers
+        </h2>
+
+        <p>
+          Customer favorite products
+        </p>
+
+      </div>
+
+      <div
+        id="best-seller-products"
+        class="products-grid"
+      ></div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+       FOOTER
+  ======================================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-container">
+
+      <div>
+
+        <h3>
+          Arnorex eMarket
+        </h3>
+
+        <p>
+          Global premium marketplace
+          experience.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="support.html">
+          Support
+        </a>
+
+        <a href="orders.html">
+          Orders
+        </a>
+
+        <a href="settings.html">
+          Settings
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- ======================================
+       MAIN APP SCRIPT
+  ======================================= -->
 
   <script
     type="module"
-    src="./js/core/app.js"
+    src="./js/pages/home-page.js"
   ></script>
 
 </body>
-
 </html>
