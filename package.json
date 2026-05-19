@@ -1,0 +1,16 @@
+{
+  "name": "arnorex-emarket",
+  "version": "1.0.0",
+  "description": "Arnorex Premium eCommerce Marketplace",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [
+    "ecommerce",
+    "marketplace",
+    "arnorex"
+  ],
+  "author": "Arnorex",
+  "license": "MIT"
+}
