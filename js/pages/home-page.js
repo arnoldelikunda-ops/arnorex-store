@@ -2,7 +2,7 @@
    ARNOREX HOME PAGE ENGINE
    Dynamic Marketplace Homepage
 ========================================= */
-
+console.log('HOME PAGE JS LOADED');
 import {
   APP
 } from '../core/constants.js';
